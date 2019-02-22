@@ -8,6 +8,26 @@
 | Shiyu Wang | 001400142 | wang.shiyu3@husky.neu.edu |
 | Mengying Wang | 001357559 | wang.mengyin@husky.neu.edu |
 
+##Install Packer
+* Compiling from Source
+
+```
+$ mkdir -p $(go env GOPATH)/src/github.com/hashicorp && cd $_
+$ git clone https://github.com/hashicorp/packer.git
+$ cd packer
+$ make dev
+```
+
+* Alternative Installation Methods
+
+```
+# For OS X && Homebrew
+brew install packer
+
+# For Windows && Chocolatey
+choco install packer
+```
+
 ## Validate Template
 
 ```
