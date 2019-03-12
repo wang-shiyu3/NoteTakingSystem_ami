@@ -44,8 +44,8 @@
         "sudo yum install -y wget",
         "cd /home/centos",
         "wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install",
-        "chmod +x ./install -y",
-        "sudo ./install -y auto"
+        "chmod +x ./install",
+        "sudo ./install auto -y"
       ]
     }
   ]
