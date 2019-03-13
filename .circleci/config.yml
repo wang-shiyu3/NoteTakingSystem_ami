@@ -21,7 +21,7 @@ jobs:
           name: Validate Packer Template
           command: ./packer validate centos-ami-template.json
       - run:
-          name: Build AM
+          name: Build AMI
           command: |
             ./packer build \
             -var "aws_region=${AWS_REGION}" \
