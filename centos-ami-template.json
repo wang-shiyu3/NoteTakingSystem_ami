@@ -37,7 +37,8 @@
       ],
       "inline": [
         "sudo yum update -y",
-        "sudo yum install -y epel-release",
+        "sudo yum install -y epel-release gcc-c++",
+        "curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -",
         "sudo yum install -y nodejs",
         "sudo yum install -y ruby",
         "sudo yum install -y wget",
