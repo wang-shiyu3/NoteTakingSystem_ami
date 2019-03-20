@@ -53,6 +53,7 @@
         "wget https://s3.amazonaws.com/amazoncloudwatch-agent/assets/amazon-cloudwatch-agent.gpg",
         "gpg --import amazon-cloudwatch-agent.gpg",
         "gpg --fingerprint 3B789C72",
+        "wget https://s3.amazonaws.com/amazoncloudwatch-agent/centos/amd64/latest/amazon-cloudwatch-agent.rpm.sig",
         "gpg --verify amazon-cloudwatch-agent.rpm.sig amazon-cloudwatch-agent.rpm",
         "sudo rpm -U ./amazon-cloudwatch-agent.rpm",
         "sudo touch /etc/systemd/system/cloudwatch.service"
