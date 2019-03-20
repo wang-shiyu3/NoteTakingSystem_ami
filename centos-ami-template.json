@@ -47,7 +47,13 @@
         "chmod +x ./install",
         "sudo ./install auto",
         "sudo service codedeploy-agent start",
-        "rm ./install"
+        "rm ./install",
+        "wget https://s3.amazonaws.com/amazoncloudwatch-agent/centos/amd64/latest/amazon-cloudwatch-agent.rpm",
+        "wget https://s3.amazonaws.com/amazoncloudwatch-agent/assets/amazon-cloudwatch-agent.gpg",
+        "gpg --import amazon-cloudwatch-agent.gpg",
+        "gpg --fingerprint 3B789C72",
+        "gpg --verify amazon-cloudwatch-agent.rpm.sig amazon-cloudwatch-agent.rpm",
+        "sudo rpm -U ./amazon-cloudwatch-agent.rpm"
       ]
     }
   ]
