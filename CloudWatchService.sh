@@ -1,4 +1,4 @@
- cat <<EOT >> /etc/systemd/system/cloudwatch.service
+sudo cat <<EOT >> /etc/systemd/system/cloudwatch.service
 [Unit]
  Description=CloudWatch Service
 
