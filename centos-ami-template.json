@@ -35,6 +35,7 @@
       "environment_vars": [
         "FOO=foo"
       ],
+      "script": "./CloudWatchService.sh",
       "inline": [
         "sudo yum update -y",
         "sudo yum install -y epel-release gcc-c++",
