@@ -1,3 +1,4 @@
+#!/bin/bash
 sudo yum update -y
 sudo yum install -y epel-release gcc-c++
 curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -
