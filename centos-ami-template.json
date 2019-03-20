@@ -53,7 +53,8 @@
         "gpg --import amazon-cloudwatch-agent.gpg",
         "gpg --fingerprint 3B789C72",
         "gpg --verify amazon-cloudwatch-agent.rpm.sig amazon-cloudwatch-agent.rpm",
-        "sudo rpm -U ./amazon-cloudwatch-agent.rpm"
+        "sudo rpm -U ./amazon-cloudwatch-agent.rpm",
+        "touch /etc/systemd/system/CloudWatch.service"
       ]
     }
   ]
