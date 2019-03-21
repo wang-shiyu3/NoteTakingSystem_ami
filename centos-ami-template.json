@@ -36,8 +36,7 @@
         "FOO=foo"
       ],
       "scripts": [
-        "./inline.sh",
-        "./CloudWatchService.sh"
+        "./inline.sh"
       ]
     }
   ]
